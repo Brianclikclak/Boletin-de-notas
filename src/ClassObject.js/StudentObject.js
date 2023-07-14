@@ -31,6 +31,7 @@ export default class StudenTemplate{
 
     set qualification(qualification){
         this.#qualification = qualification;
+        
     }
 
 }
