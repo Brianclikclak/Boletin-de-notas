@@ -1,4 +1,4 @@
-export default class StudenTemplate{
+export default class StudentTemplate{
     #name;
     #subject;
     #qualification;
