@@ -81,8 +81,10 @@
 </script>
 
 <template>
-	<form
-		class="form"
+	
+		
+	
+	<form class="form"
 		@submit.prevent="sendData"
 	>
 		<input
@@ -113,7 +115,7 @@
 				selected
 				disabled
 			>
-				Select your option
+				Select your option 
 			</option>
 			<option class="option">History</option>
 			<option class="option">Math</option>
@@ -152,9 +154,33 @@
 			See score
 		</button>
 	</form>
+
 </template>
 
-<style lang="scss">
 
 
+<style scoped >
+	.form {
+		margin-top: 10px;
+		width: 30em;
+		height: 25em;
+		padding: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		border-radius: 5px;
+		background-color: rgb(62, 122, 186);
+	}
+
+	input, select, button{
+		width: 90%;
+		border-radius: 5px;
+		padding: 1em;
+		cursor: pointer;
+	}
+
+
+
+	
 </style>
