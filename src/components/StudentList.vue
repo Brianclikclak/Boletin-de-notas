@@ -19,7 +19,7 @@
 				</tr>
 			</thead>
 			<tbody class="container__students">
-				<tr v-for="{ name, subject, qualification } in students" :key="name">
+				<tr class="table_row" v-for="{ name, subject, qualification } in students" :key="name">
 					<td class="container__value">{{ name }}</td>
 					<td
 						class="container__value"
@@ -39,6 +39,45 @@
 	</div>
 </template>
 
-<style lang="scss">
+<style scoped>
+
+.container {
+		margin-top: 1em;
+		border: 3px solid rgb(244, 109, 72);
+		border-radius: 5px;
+		background-color: aliceblue;
+		width: 50em;
+
+		
+}
+.container__titles{
+	color: yellowgreen;
+}
+.container__table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.container__keys{
+	padding: 1em;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.container__value{
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 2;
+	border-top: 1px solid;
+}
+
+.table_row{
+border-bottom: 1px solid;
+}
+
+
+
+
 
 </style>
+
+
+
