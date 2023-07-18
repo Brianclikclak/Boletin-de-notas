@@ -48,7 +48,7 @@
 
     const v$ = useVuelidate(rules, student);
 
-    let studenList = [];
+    let studentList = [];
 
     const emit = defineEmits(["sendData"]);
 
@@ -68,11 +68,11 @@
         const studentUpdated = new StudentTemplate(
                 student.name,
                 student.subject,
-                student.score,
+                student.score
         );
 
-        studenList.push(studentUpdated);
-        emit("sendData", studenList);
+        studentList.push(studentUpdated);
+        emit('sendData', studentList);
 
         clearValueInputs();
 
@@ -178,6 +178,10 @@
 		border-radius: 5px;
 		padding: 1em;
 		cursor: pointer;
+	}
+
+	.error-red{
+		color: rgb(209, 30, 30);
 	}
 
 
