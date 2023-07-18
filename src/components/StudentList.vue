@@ -7,6 +7,8 @@
 		datos: {},
 	});
 	
+
+	
 </script>
 <template>
 	<div v-show="students.length > 0 " class="container">
